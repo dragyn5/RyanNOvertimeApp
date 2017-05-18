@@ -4,7 +4,7 @@ FactoryGirl.define do
     rationale "Some Rationale" 
     user
   end  
-  factory :secondpost, class: "Post" do
+  factory :second_post, class: "Post" do
     date Date.yesterday
     rationale "Some more Rationale"
     user
