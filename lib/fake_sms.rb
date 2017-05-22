@@ -1,4 +1,3 @@
-
 module FakeSms
   Message = Struct.new(:message, :message)
   @messages = []

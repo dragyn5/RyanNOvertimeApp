@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '5.0.2'
-gem 'sqlite3', '~> 1.3', '>= 1.3.13'
+gem 'pg', '~> 0.15'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
@@ -15,7 +15,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.0'
   gem 'capybara'
   gem 'database_cleaner'
-  gem 'factory_girl_rails', '~> 4.8'
+  gem 'factory_girl_rails', '~> 4.7'
 end
 
 group :development do
@@ -24,13 +24,11 @@ group :development do
 end
 
 gem 'devise', '~> 4.2'
-
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
-gem 'gritter', "1.2.0"
-
+gem "gritter", "1.2.0"
 gem 'administrate', '~> 0.7.0'
 gem 'bourbon'
 gem 'pundit', '~> 1.1'
-gem 'puma', '~> 3.8', '>= 3.8.2'
-gem 'twilio-ruby', '~> 4.13'
-gem 'dotenv-rails' , :groups => [:development, :test]
+gem 'puma', '~> 3.4'
+gem 'twilio-ruby', '~> 4.11', '>= 4.11.1'
+gem 'dotenv-rails', :groups => [:development, :test]
