@@ -35,7 +35,7 @@ Rails.application.configure do
 
 
 
-  
+
   config.public_file_server.enabled = true
 
 
