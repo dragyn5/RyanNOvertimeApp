@@ -148,16 +148,3 @@
     if (this == event.target) enableFormElements($(this));
   });
 })( jQuery );
-Don't worry about what this code is doing, just know that it is doing the majority of the work for implementing the AJAX implementation, including tasks such as escaping the params and processing the navigation without having to refresh the page.
-
-Now create a new partial for our posts and move the <tr> tags into it:
-
-<!-- app/views/posts/_post.html.erb -->
-
-<tr>
-  <td><%= post.title %></td>
-  <td><%= post.author %></td>
-  <td><%= link_to 'Show', post %></td>
-  <td><%= link_to 'Edit', edit_post_path(post) %></td>
-  <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-</tr>
